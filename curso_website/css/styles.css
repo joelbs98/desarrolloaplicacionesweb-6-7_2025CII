@@ -301,3 +301,34 @@ h3 {
   scroll-snap-align: center;
   scroll-snap-stop: always;
 }
+
+/* 1) Contenedor fluido (crítico) */
+.contenedor {
+  width: min(100% - 2rem, 120rem);
+  margin-inline: auto;
+}
+
+/* 3) Hero adaptable (opcional pero recomendado) */
+.hero {
+  min-height: clamp(260px, 45vh, 520px);
+}
+
+/* 4) Grid “Lenguajes” más progresivo */
+@media (min-width: 768px) {
+  .lenguajes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .lenguajes {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+  }
+}
+
+/* 5) Navbar (mejor tap target) */
+.navegacion-principal a {
+  padding: 1rem 1.25rem;
+}
