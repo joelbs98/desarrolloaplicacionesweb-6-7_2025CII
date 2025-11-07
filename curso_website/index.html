@@ -41,74 +41,92 @@
       </div>
     </section>
 
-    <main class="contenedor">
+    <main class="contenedor sombra">
       <h2>Tecnologías</h2>
-      <!--Si tengo un heading como primer hijo se recomienda hacer un section-->
+      <div class="lenguajes">
+        <!--Si tengo un heading como primer hijo se recomienda hacer un section-->
+        <section class="lenguaje">
+          <h3>HTML</h3>
+          <div class="iconos">
+            <img src="imagenes/html.svg" />
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit
+            arcu, hendrerit sit amet dolor imperdiet, sagittis congue tellus.
+            Nullam gravida arcu augue, ac tempus arcu aliquam nec.
+          </p>
+        </section>
+        <section class="lenguaje">
+          <h3>CSS</h3>
+          <div class="iconos">
+            <img src="imagenes/css.svg" />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit
+            arcu, hendrerit sit amet dolor imperdiet, sagittis congue tellus.
+            Nullam gravida arcu augue, ac tempus arcu aliquam nec.
+          </p>
+        </section>
+        <section class="lenguaje">
+          <h3>Javascript</h3>
+          <div class="iconos">
+            <img src="imagenes/javascript.svg" />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit
+            arcu, hendrerit sit amet dolor imperdiet, sagittis congue tellus.
+            Nullam gravida arcu augue, ac tempus arcu aliquam nec.
+          </p>
+        </section>
+        <section class="lenguaje">
+          <h3>Node.js</h3>
+          <div class="iconos">
+            <img src="imagenes/node.svg" />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit
+            arcu, hendrerit sit amet dolor imperdiet, sagittis congue tellus.
+            Nullam gravida arcu augue, ac tempus arcu aliquam nec.
+          </p>
+        </section>
+      </div>
+
       <section>
-        <h3>HTML</h3>
-        <img src="imagenes/html.svg" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit
-          arcu, hendrerit sit amet dolor imperdiet, sagittis congue tellus.
-          Nullam gravida arcu augue, ac tempus arcu aliquam nec.
-        </p>
-      </section>
-      <section>
-        <h3>CSS</h3>
-        <img src="imagenes/css.svg" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit
-          arcu, hendrerit sit amet dolor imperdiet, sagittis congue tellus.
-          Nullam gravida arcu augue, ac tempus arcu aliquam nec.
-        </p>
-      </section>
-      <section>
-        <h3>Javascript</h3>
-        <img src="imagenes/javascript.svg" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit
-          arcu, hendrerit sit amet dolor imperdiet, sagittis congue tellus.
-          Nullam gravida arcu augue, ac tempus arcu aliquam nec.
-        </p>
-      </section>
-      <section>
-        <h3>Node.js</h3>
-        <img src="imagenes/node.svg" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec velit
-          arcu, hendrerit sit amet dolor imperdiet, sagittis congue tellus.
-          Nullam gravida arcu augue, ac tempus arcu aliquam nec.
-        </p>
+        <h2>Contacto</h2>
+        <form class="formulario">
+          <fieldset>
+            <legend>Contactanos</legend>
+            <div class="contenedor-campos">
+              <div class="campo">
+                <label>Nombre</label>
+                <input
+                  class="input-text"
+                  type="text"
+                  placeholder="Escriba su nombre..."
+                />
+              </div>
+              <div class="campo">
+                <label>Correo</label>
+                <input class="input-text" type="email" />
+              </div>
+              <div class="campo">
+                <label>Telefono</label>
+                <input class="input-text" type="tel" />
+              </div>
+              <div class="campo">
+                <label>Mensaje</label>
+                <textarea class="input-text"></textarea>
+              </div>
+            </div>
+            <div class="enviar">
+              <input class="boton" type="submit" value="Envíar" />
+            </div>
+          </fieldset>
+        </form>
       </section>
     </main>
-    <section>
-      <h2>Contacto</h2>
-      <form>
-        <fieldset>
-          <legend>Contactanos</legend>
-          <div>
-            <label>Nombre</label>
-            <input type="text" placeholder="Escriba su nombre..." />
-          </div>
-          <div>
-            <label>Correo</label>
-            <input type="email" />
-          </div>
-          <div>
-            <label>Telefono</label>
-            <input type="tel" />
-          </div>
-          <div>
-            <label>Mensaje</label>
-            <textarea></textarea>
-          </div>
-          <div>
-            <input type="submit" value="Envíar" />
-          </div>
-        </fieldset>
-      </form>
-    </section>
-    <footer>
+    <footer class="footer">
       <p>Todos los derechos reservados a Joel Barba Salazar</p>
     </footer>
   </body>
