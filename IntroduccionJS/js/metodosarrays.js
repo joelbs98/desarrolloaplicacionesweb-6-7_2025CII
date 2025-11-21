@@ -25,8 +25,5 @@ numeros.splice(2,2);//va hacia el elemento que deseas y elimina los que deseas
 
 //Spread Operator -> recomendada
 const nuevosNumeros = [100,200,...numeros,10];//buena practica ya que no modificamos el arreglo original
-
-
-
 console.table(numeros);
 console.table(nuevosNumeros);
