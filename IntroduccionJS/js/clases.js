@@ -20,3 +20,22 @@ console.log(producto);
 console.log(producto2);
 
 console.log(producto.indicarPrecio());
+
+//Herencia
+class Libro extends Producto{
+    constructor(nombre,precio,isbn){
+        super(nombre,precio);//las propiedades heredadas
+        this.isbn = isbn;//las propiedades propias de la clase
+    }
+    formatearProducto(){
+        return `${super.formatearProducto()} y su isbn es ${this.isbn}}`;
+    }
+    indicarPrecio(){
+        return `${super.indicarPrecio()} y Si hay stock`;
+    }
+}
+
+const libro = new Libro("Harry Potter",200,"AHSUS828SD");
+console.log(libro.formatearProducto());
+console.log(libro.indicarPrecio()); 
+
